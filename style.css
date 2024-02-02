@@ -119,7 +119,7 @@ footer h2 {
     .contenedor-principal {
         width: 390px;
         height: 390px;
-        padding: 2rem 0rem;
+        padding: 4rem 0rem 1rem 0rem;
     }
     .agujero {
         width: 110px;
@@ -140,7 +140,8 @@ footer h2 {
         margin-top: 1rem;
     }
     footer {
-        margin: 2rem 0rem;
+        padding-top: 2rem;
+        margin: 2rem 0rem 0rem 0rem;
     }
     .redes h2 {
         padding-bottom: 1rem;
