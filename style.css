@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(151, 105, 0);
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    background: radial-gradient(circle, rgba(31,223,227,1) 0%, rgba(93,181,255,1) 100%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor-principal, .puntaje {
+    margin: auto;
+}
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    position: relative;
+}
+.madriguera {
+    display: none;
+    position: relative;
+}
+.agujero {
+    width: 150px;
+}
+.topito {
+    display: none;
+
+    width: 150px;
+    position: absolute;
+    border-radius: 3rem;
+
+    z-index: 1;
+
+    top: -0.7rem;
+    right: -0.08rem;
+}
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+footer h2 {
+    padding: 0.5rem;
+    font-family: monospace;
+}
+.redes img {
+    width: 2.7rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+/* Pseudo-clases */
+
+.topito:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.reinicio:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+.redes img:hover {
+    box-shadow: 11px 10px 20px -3px rgb(70, 43, 0);
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* Clases que se activan y se desactivan */
+
+.puntaje, .reinicio {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+}
+.puntaje { /* reinicio display: none */
+
+    display: none;
+    width: 300px;
+    padding: 1rem;
+    border: 0.16rem solid black;
+    background: #FFDE59;
+
+    position: absolute;
+    top: -1rem;
+
+}
+.reinicio {
+    width: 400px;
+    top: -5rem;
+    cursor: pointer;
+}
+
+/* Media Querys */
+
+@media (max-width: 590px) {
+    header {
+        padding: 2rem 0rem;
+    }
+    header img {
+        width: 200px;
+    }
+    .contenedor-principal {
+        width: 390px;
+        height: 390px;
+        padding: 2rem 0rem;
+    }
+    .agujero {
+        width: 110px;
+    }
+    .topito {
+        width: 110px;
+        border-radius: 0rem;
+
+        top: -0.5rem;
+        right: 0.05rem;
+    }
+    .reinicio {
+        width: 270px;
+    }
+    .puntaje {
+        width: 220px;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    footer {
+        margin: 2rem 0rem;
+    }
+    .redes h2 {
+        padding-bottom: 1rem;
+        font-size: 0.5rem;
+    }
+    .redes img {
+        width: 2.2rem;
+        margin: 0.3rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .contenedor-principal {
+        width: 300px;
+    }
+    .agujero {
+        width: 90px;
+    }
+    .topito {
+        width: 100px;
+        top: -0.9rem;
+        left: -0.29rem;
+    }
+}
